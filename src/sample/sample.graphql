@@ -1,0 +1,8 @@
+type Sample @key(fields: "id") {
+  id: ID!
+  title: String!
+}
+
+extend type Query {
+  getSamples: [Sample]
+}

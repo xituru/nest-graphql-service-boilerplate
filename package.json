@@ -1,6 +1,6 @@
 {
-  "name": "nest-graphql-gateway-boilerplate",
-  "description": "Nest.js federated graphql gateway boilerplate",
+  "name": "nest-graphql-service-boilerplate",
+  "description": "Nest.js federated graphql service boilerplate",
   "version": "0.0.1",
   "private": true,
   "license": "UNLICENSED",
@@ -21,6 +21,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@apollo/federation": "^0.29.0",
     "@apollo/gateway": "^0.38.0",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",

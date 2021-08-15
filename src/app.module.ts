@@ -1,19 +1,10 @@
 import { Module } from '@nestjs/common';
-import { GraphQLGatewayModule } from '@nestjs/graphql';
 import AppController from './app.controller';
 import AppService from './app.service';
+import SampleModule from './sample/sample.module';
 
 @Module({
-  imports: [
-    GraphQLGatewayModule.forRoot({
-      server: {
-        cors: true,
-      },
-      gateway: {
-        serviceList: [],
-      },
-    }),
-  ],
+  imports: [SampleModule],
   controllers: [AppController],
   providers: [AppService],
 })
