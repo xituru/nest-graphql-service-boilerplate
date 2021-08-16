@@ -9,7 +9,7 @@ export default class SampleService {
   ];
 
   findOne(sampleId: number) {
-    return this.#samples.find(({ id }) => id === sampleId);
+    return this.#samples.find(({ id }) => id === Number(sampleId));
   }
 
   findAll() {

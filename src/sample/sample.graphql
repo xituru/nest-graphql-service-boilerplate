@@ -5,4 +5,5 @@ type Sample @key(fields: "id") {
 
 extend type Query {
   getSamples: [Sample]
+  findSample(id: ID!): Sample
 }

@@ -5,12 +5,12 @@ import SampleService from './sample.service';
 export default class SampleResolver {
   constructor(private readonly sampleService: SampleService) {}
 
-  @Query('findPost')
+  @Query('findSample')
   findSample(@Args({ name: 'id', type: () => ID }) id: number) {
     return this.sampleService.findOne(id);
   }
 
-  @Query('getPosts')
+  @Query('getSamples')
   getSamples() {
     return this.sampleService.findAll();
   }
